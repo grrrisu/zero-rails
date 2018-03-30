@@ -56,8 +56,9 @@ jobs:
 
       # copy config fiels
 
-      - run: cp config/database.example.yml config/database.yml
-      - run: cp config/secrets.example.yml config/secrets.yml
+      #- run: cp config/database.example.yml config/database.yml
+      #- run: cp config/secrets.example.yml config/secrets.yml
+
       # Database setup
       - run: bundle exec rake db:setup
 
