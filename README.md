@@ -1,3 +1,6 @@
+[![CircleCI](https://circleci.com/gh/grrrisu/zero-rails.svg?style=svg)](https://circleci.com/gh/grrrisu/zero-rails)
+[![Dependency Status](https://gemnasium.com/badges/github.com/grrrisu/zero-rails.svg)](https://gemnasium.com/github.com/grrrisu/zero-rails)
+
 ## Includes
 
 * Heroku ready
@@ -7,8 +10,6 @@
 * React (only)
 
 ## Development
-
-[![CircleCI](https://circleci.com/gh/grrrisu/zero-rails.svg?style=svg)](https://circleci.com/gh/grrrisu/zero-rails)
 
 `yarn start`
 
