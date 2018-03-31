@@ -11,11 +11,15 @@
 
 ## Development
 
+`rails db:fixtures:load`
+
 `yarn start`
 
-`rails s`
+`rails server`
 
-## Forking
+## Clone
+
+clone project and adapt the following files:
 
 in circleci/config.yml
 
