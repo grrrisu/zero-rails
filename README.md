@@ -5,6 +5,7 @@
 
 * Heroku ready
 * CircleCI ready
+* Bugsnag ready
 * [Bootstrap](https://getbootstrap.com/) (only css)
 * SimpleForm
 * React (only)
