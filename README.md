@@ -43,7 +43,3 @@ and `config/database.yml`
 Heroku
 
 https://zero-rails.herokuapp.com/
-
-## Todos
-
-* Bootstrap js does not work with webpacker (popper.js or Util not found)
