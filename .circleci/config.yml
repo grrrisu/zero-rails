@@ -12,6 +12,7 @@ jobs:
             PGUSER: db-user
             RAILS_ENV: test
             DISABLE_SPRING: true
+            CC_TEST_REPORTER_ID: 990cbb7301d8cea5334d8fec02249eef87eb66de70e33befe3d1566776d47a19 # codeclimate
        - image: circleci/postgres:9.4
          environment:
             POSTGRES_USER: db-user
@@ -22,6 +23,14 @@ jobs:
 
     steps:
       - checkout
+
+      # codeclimate
+      - run:
+          name:  Download cc-test-reporter
+          command: |
+            mkdir -p tmp/
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./tmp/cc-test-reporter
+            chmod +x ./tmp/cc-test-reporter
 
       # Download and cache ruby dependencies
       - restore_cache:
@@ -63,4 +72,8 @@ jobs:
       - run: bundle exec rake db:setup
 
       # run tests!
-      - run: bundle exec rails test
+      - run: ./tmp/cc-test-reporter before-build
+      - run:
+          name: rails tests
+          command: bundle exec rails test
+      - run: ./tmp/cc-test-reporter after-build --exit-code $?
