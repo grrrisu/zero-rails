@@ -1,0 +1,10 @@
+%nav.navbar.sticky-top.navbar-expand-lg.navbar-light
+  %button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarItems")
+    %span.navbar-toggler-icon
+
+  .collapse.navbar-collapse#navbarItems
+    %ul.navbar-nav.mr-auto
+      %li.nav-item.active
+        = link_to "Home", root_path, class: 'nav-link'
+
+    = render 'layouts/session_links'

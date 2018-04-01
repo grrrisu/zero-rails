@@ -9,4 +9,9 @@
 
 import {} from 'jquery-ujs'
 
+import 'bootstrap'
+
+//import 'bootstrap/js/dist/util';
+//import 'bootstrap/js/dist/collapse';
+
 console.log('Hello World from Webpacker')

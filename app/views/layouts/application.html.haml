@@ -7,8 +7,8 @@
     = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
   %body
     .container-fluid
+      = render '/layouts/nav'
       = render '/layouts/alerts'
-      = render '/layouts/session_links'
       = yield
     = javascript_pack_tag 'app'
     = javascript_pack_tag 'hello_react'
