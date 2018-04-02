@@ -14,6 +14,7 @@
 * SimpleForm
 * Authentication via Devise
 * Authorization via Pundit
+* Decorators via Draper
 * React (only)
 
 ## Development
