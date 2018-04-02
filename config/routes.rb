@@ -4,4 +4,8 @@ Rails.application.routes.draw do
     sign_in: 'login', sign_out: 'logout'
   }
 
+  namespace :admin do
+    resources :users, only: [:index, :show]
+  end
+
 end

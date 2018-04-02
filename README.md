@@ -13,6 +13,7 @@
 * [Bootstrap](https://getbootstrap.com/)
 * SimpleForm
 * Authentication via Devise
+* Authorization via Pundit
 * React (only)
 
 ## Development
