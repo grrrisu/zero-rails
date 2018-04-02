@@ -1,6 +1,4 @@
 %h1 Pages#home
 %p Find me in app/views/pages/home.html.haml
 
-= simple_form_for :test do |f|
-  = f.input :foo
-  = f.button :submit, class: 'btn-primary'
+%p= link_to 'login', new_user_session_path, class: 'btn btn-primary'

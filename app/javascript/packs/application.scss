@@ -1,1 +1,9 @@
 @import '../styles/init_bootstrap';
+
+.has-error, .has-error input {
+  color: $red;
+}
+
+.has-error input {
+  border-color: $red;
+}

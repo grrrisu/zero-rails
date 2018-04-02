@@ -1,7 +1,7 @@
 - flash.each do |name, msg|
   - if name == 'success'
     .alert.alert-success(role="alert")= msg
-  - elsif name == 'error'
+  - elsif name == 'error' || name == 'alert'
     .alert.alert-danger(role="alert")= msg
   - elsif name == 'notice'
     .alert.alert-info(role="alert")= msg
