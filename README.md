@@ -13,6 +13,7 @@
 * [Bootstrap](https://getbootstrap.com/)
 * SimpleForm
 * Authentication via Devise
+* Authorization via Pundit
 * React (only)
 
 ## Development
@@ -42,6 +43,8 @@ and `config/database.yml`
 `git remote add heroku https://git.heroku.com/zero-rails.git`
 
 `git push heroku master`
+
+`heroku run rake db:migrate`
 
 ## Production
 

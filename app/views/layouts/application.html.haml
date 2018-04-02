@@ -6,9 +6,8 @@
     = csrf_meta_tags
     = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
   %body
+    = render '/layouts/nav'
     .container-fluid
-      = render '/layouts/nav'
-      = render '/layouts/alerts'
+      %p= render '/layouts/alerts'
       = yield
     = javascript_pack_tag 'app'
-    = javascript_pack_tag 'hello_react'
