@@ -33,6 +33,8 @@ in circleci/config.yml
 
 `POSTGRES_DB: zero-rails_test`
 
+`working_directory: ~/zero-rails`
+
 in app/application.rb
 
 `module ZeroRails`
