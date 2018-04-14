@@ -1,26 +1,27 @@
 source 'https://rubygems.org'
 
-ruby '2.5.0'
+ruby '2.5.1'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rails', '~> 5.1.6'
+gem 'rails', '~> 5.2.0'
 gem 'pg', '>= 0.18', '< 2.0'
-gem 'puma', '~> 3.7'
+gem 'bootsnap'
+gem 'puma'
 gem "bugsnag"
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails'
 gem 'haml-rails'
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier'
 gem 'webpacker'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-gem 'coffee-rails', '~> 4.2'
-gem 'turbolinks', '~> 5'
-gem 'jbuilder', '~> 2.5'
+gem 'coffee-rails'
+gem 'turbolinks'
+gem 'jbuilder'
 gem 'simple_form'
 gem 'devise'
 gem 'pundit'
@@ -43,7 +44,7 @@ group :test do
 end
 
 group :development do
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
