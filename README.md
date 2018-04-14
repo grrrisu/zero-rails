@@ -43,6 +43,8 @@ and `config/database.yml`
 
 ## Deploy
 
+Add environment variable `RAILS_MASTER_KEY`
+
 `git remote add heroku https://git.heroku.com/zero-rails.git`
 
 `git push heroku master`
