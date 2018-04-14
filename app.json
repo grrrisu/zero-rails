@@ -1,7 +1,7 @@
 {
   "name": "zero-rails",
   "scripts": {
-    "postdeploy": "bin/setup"
+    "postdeploy": "./bin/rake db:schema:load db:fixtures:load"
   },
   "env": {
     "BUGSNAG_KEY": {
