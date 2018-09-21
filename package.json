@@ -13,8 +13,8 @@
     "jquery-ujs": "^1.2.2",
     "popper.js": "^1.14.4",
     "prop-types": "^15.6.2",
-    "react": "^16.5.0",
-    "react-dom": "^16.5.0"
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"
