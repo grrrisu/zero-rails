@@ -2,8 +2,8 @@ admin:
   email: admin@example.com
   encrypted_password: <%= Devise::Encryptor.digest(User, 'test123') %>
 
-john_snow:
-  email: john.snow@example.com
+jon_snow:
+  email: jon.snow@example.com
   encrypted_password: <%= Devise::Encryptor.digest(User, 'test123') %>
 
 ned_stark:
