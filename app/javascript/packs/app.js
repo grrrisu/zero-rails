@@ -8,6 +8,8 @@
 // layout file, like app/views/layouts/application.html.erb
 import "jquery";
 
+import {} from "jquery-ujs";
+
 import "../../../node_modules/materialize-css/dist/js/materialize.js";
 //= require materialize-form
 
