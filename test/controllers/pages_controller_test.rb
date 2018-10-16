@@ -10,7 +10,7 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should see logout link" do
-    sign_in users(:john_snow)
+    sign_in users(:jon_snow)
     get root_path
     assert_response :success
     assert_select '#logout-link', 'logout'
