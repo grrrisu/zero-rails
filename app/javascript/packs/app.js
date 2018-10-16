@@ -9,5 +9,6 @@
 import "jquery";
 
 import "../../../node_modules/materialize-css/dist/js/materialize.js";
+//= require materialize-form
 
 console.log("Hello World from Webpacker");
