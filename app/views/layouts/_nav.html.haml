@@ -1,10 +1,11 @@
-%nav.navbar.sticky-top.navbar-expand-lg.navbar-light.bg-light
-  %button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarItems")
-    %span.navbar-toggler-icon
-
-  .collapse.navbar-collapse#navbarItems
-    %ul.navbar-nav.mr-auto
-      %li.nav-item.active
+%nav.light-blue.lighten-1{:role => "navigation"}
+  .nav-wrapper.container
+    %a#logo-container.brand-logo{:href => "#"} Logo
+    %ul.right.hide-on-med-and-down
+      %li
         = link_to "Home", root_path, class: 'nav-link'
+      %li
+        = render 'layouts/session_links'
 
-    = render 'layouts/session_links'
+    %a.sidenav-trigger{"data-target" => "nav-mobile", :href => "#"}
+      %i.material-icons menu

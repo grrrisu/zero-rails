@@ -6,5 +6,8 @@
 //
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
+import "jquery";
+
+import "../../../node_modules/materialize-css/dist/js/materialize.js";
 
 console.log("Hello World from Webpacker");
