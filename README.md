@@ -8,7 +8,7 @@
 - Bugsnag ready
 - codeclimate ready
 - javascript and css dependencies via webpack
-- [Bootstrap](https://getbootstrap.com/)
+- [Materialize CSS](https://materializecss.com/)
 - SimpleForm
 - Authentication via Devise
 - Authorization via Pundit
