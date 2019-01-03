@@ -6,18 +6,18 @@ version: 2
 jobs:
   build:
     docker:
-       - image: circleci/ruby:2.5.1-node-browsers
-         environment:
-            PGHOST: 127.0.0.1
-            PGUSER: db-user
-            RAILS_ENV: test
-            DISABLE_SPRING: true
-            # CC_TEST_REPORTER_ID: # set circleci as environment var
-       - image: circleci/postgres:9.4
-         environment:
-            POSTGRES_USER: db-user
-            POSTGRES_DB: zero-rails_test
-            POSTGRES_PASSWORD: ""
+      - image: circleci/ruby:2.6.0-node-browsers
+        environment:
+          PGHOST: 127.0.0.1
+          PGUSER: db-user
+          RAILS_ENV: test
+          DISABLE_SPRING: true
+          # CC_TEST_REPORTER_ID: # set circleci as environment var
+      - image: circleci/postgres:9.4
+        environment:
+          POSTGRES_USER: db-user
+          POSTGRES_DB: zero-rails_test
+          POSTGRES_PASSWORD: ""
 
     working_directory: ~/zero-rails
 
@@ -26,7 +26,7 @@ jobs:
 
       # codeclimate
       - run:
-          name:  Download cc-test-reporter
+          name: Download cc-test-reporter
           command: |
             mkdir -p tmp/
             curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./tmp/cc-test-reporter
@@ -35,9 +35,9 @@ jobs:
       # Download and cache ruby dependencies
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "Gemfile.lock" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+            - v1-dependencies-{{ checksum "Gemfile.lock" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
 
       - run:
           name: install dependencies
