@@ -15,7 +15,7 @@ gem "bugsnag"
 gem 'sass-rails'
 gem 'haml-rails'
 gem 'uglifier'
-gem 'webpacker'
+gem 'webpacker', '3.5.5'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
