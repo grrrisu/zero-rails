@@ -12,7 +12,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'bootsnap'
 gem 'puma'
 gem "bugsnag"
-gem 'sass-rails'
+gem 'sassc-rails'
 gem 'haml-rails'
 gem 'uglifier'
 gem 'webpacker'
