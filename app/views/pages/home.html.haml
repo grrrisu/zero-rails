@@ -1,5 +1,9 @@
-%h1 Pages#home
-%p Find me in app/views/pages/home.html.haml
+%h1 Dashboard
+
+%h3 Admin Backend
+%ul
+  %li= link_to 'user management', admin_users_path
+
 
 %p= link_to 'login', new_user_session_path, class: 'btn btn-primary'
 
