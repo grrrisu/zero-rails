@@ -18,6 +18,7 @@ jobs:
           POSTGRES_USER: db-user
           POSTGRES_DB: zero-rails_test
           POSTGRES_PASSWORD: ""
+          POSTGRES_HOST_AUTH_METHOD: trust
 
     working_directory: ~/zero-rails
 
