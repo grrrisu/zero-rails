@@ -66,10 +66,21 @@ class Admin::UsersControllerTest < ActionDispatch::IntegrationTest
 
   test "a user can delete another user" do
     sign_in users(:jon_snow)
+    get admin_users_path
+    assert response.body.include?("ned.stark")
     delete admin_user_path(users(:ned_stark))
     follow_redirect!
     assert_response :success
     assert !response.body.include?("ned.stark")
+  end
+
+  test "a user can not delete himself" do
+    sign_in users(:jon_snow)
+    get admin_users_path
+    delete admin_user_path(users(:jon_snow))
+    response.body.include?("alert-danger")
+    get admin_users_path
+    assert response.body.include?("jon.snow")
   end
 
 end
