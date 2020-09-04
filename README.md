@@ -33,11 +33,21 @@ in circleci/config.yml
 
 `working_directory: ~/zero-rails`
 
-in app/application.rb
+in config/application.rb
 
 `module ZeroRails`
 
 and `config/database.yml`
+
+### MasterKey
+
+remove `config/credentials.yml.enc`
+
+create a new one, a new `master.key` will be created as well
+
+`EDITOR=vim rails credentials:edit`
+
+adapt the file using the `config/credentials_example.yml`
 
 ## Deploy
 
