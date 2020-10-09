@@ -2,6 +2,7 @@
 
 %p= @user.email
 
-%p= image_tag @user.avatar
+- if @user.avatar.attached?
+  %p= image_tag @user.avatar
 
 %p= link_to 'back to all users', admin_users_path
