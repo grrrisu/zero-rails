@@ -53,12 +53,12 @@ class Admin::UsersControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
 
     assert_select 'h1', 'Edit User'
-    avatar_image = fixture_file_upload(Rails.root.join('test', 'fixtures', 'files', 'jon.snow.png'),'image/png')
+    avatar_image = fixture_file_upload(Rails.root.join('test', 'fixtures', 'files', 'jon.snow.png'), 'image/png')
     put admin_user_path(users(:jon_snow),
     params: {
       user:{
         email: 'jonny.snow@example.com',
-        avatar: avatar_image
+        #avatar: avatar_image
       }
     })
 
