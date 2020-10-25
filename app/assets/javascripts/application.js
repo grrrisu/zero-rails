@@ -13,3 +13,5 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+// this file is not used, we use /app/javascript/packs/app.js

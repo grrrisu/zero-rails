@@ -12,4 +12,6 @@
  *
  *= require_tree .
  *= require_self
+ *
+ * this file is not used, we use /app/javascript/packs/styles
  */
