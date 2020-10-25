@@ -8,6 +8,8 @@
 - Bugsnag ready
 - codeclimate ready
 - javascript and css dependencies via webpack
+- ActiveStorage setup
+- ActionCable via webpack
 - [Bootstrap](https://getbootstrap.com/)
 - SimpleForm
 - Authentication via Devise
