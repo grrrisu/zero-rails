@@ -40,7 +40,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'simplecov', '<= 0.17', require: false
+  gem 'simplecov', '<= 0.22', require: false
 end
 
 group :development do
