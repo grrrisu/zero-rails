@@ -837,9 +837,9 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@rails/actioncable@^6.0.3-4":
-  version "6.0.3-7"
-  resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.0.3-7.tgz#9993c12bd86e254889c5f401be4df7bb2414d180"
+"@rails/actioncable@^6.0.4":
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.0.4.tgz#d533c3d9176ed7763145162dec4f460a9d6fb550"
 
 "@rails/webpacker@^5.2.1":
   version "5.3.0"
