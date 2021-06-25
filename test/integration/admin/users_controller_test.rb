@@ -28,13 +28,13 @@ class Admin::UsersControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
 
     assert_select 'h1', 'Create User'
-    post admin_users_path(params: {
+    post admin_users_path, params: {
       user:{
         email: 'catelyn.stark@example.com',
         password: 'test123',
         password_confirmation: 'test123'
       }
-    })
+    }
 
     follow_redirect!
     assert_response :success
@@ -54,13 +54,12 @@ class Admin::UsersControllerTest < ActionDispatch::IntegrationTest
 
     assert_select 'h1', 'Edit User'
     avatar_image = fixture_file_upload(Rails.root.join('test', 'fixtures', 'files', 'jon.snow.png'), 'image/png')
-    put admin_user_path(users(:jon_snow),
-    params: {
-      user:{
-        email: 'jonny.snow@example.com',
-        #avatar: avatar_image
+    put admin_user_path(users(:jon_snow)), params: {
+        user:{
+          email: 'jonny.snow@example.com',
+          avatar: avatar_image
+        }
       }
-    })
 
     follow_redirect!
     assert_response :success
